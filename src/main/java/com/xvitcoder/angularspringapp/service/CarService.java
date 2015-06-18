@@ -1,4 +1,4 @@
-package com.xvitcoder.angualrspringapp.service;
+package com.xvitcoder.angularspringapp.service;
 
 import java.util.List;
 

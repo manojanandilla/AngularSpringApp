@@ -1,8 +1,8 @@
-package com.xvitcoder.angualrspringapp.service;
-
-import com.xvitcoder.angualrspringapp.beans.RailwayStation;
+package com.xvitcoder.angularspringapp.service;
 
 import java.util.List;
+
+import com.xvitcoder.angularspringapp.beans.RailwayStation;
 
 
 public interface RailwayStationService {

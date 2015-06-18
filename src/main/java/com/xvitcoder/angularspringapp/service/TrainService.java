@@ -1,8 +1,8 @@
-package com.xvitcoder.angualrspringapp.service;
-
-import com.xvitcoder.angualrspringapp.beans.Train;
+package com.xvitcoder.angularspringapp.service;
 
 import java.util.List;
+
+import com.xvitcoder.angularspringapp.beans.Train;
 
 /**
  * Created with IntelliJ IDEA.
@@ -11,6 +11,7 @@ import java.util.List;
  * Time: 12:20 AM
  */
 public interface TrainService {
+	
     public List<Train> getAllTrains();
 
     public Train getTrainById(Long id);

@@ -1,11 +1,11 @@
-package com.xvitcoder.angualrspringapp.service;
+package com.xvitcoder.angularspringapp.service;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.xvitcoder.angualrspringapp.beans.RailwayStation;
+import com.xvitcoder.angularspringapp.beans.RailwayStation;
 
 
 @Service("RailwayStationService")
@@ -57,7 +57,7 @@ public class RailwayStationServiceImpl implements RailwayStationService {
         }
 	}
 	
-    @Override
+    
     public void deleteAll() {
         rsList.clear();
         id = 0L;
