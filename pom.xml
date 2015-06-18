@@ -26,7 +26,7 @@
 			<artifactId>jackson-mapper-asl</artifactId>
 			<version>1.9.12</version>
 		</dependency>
-		
+
 		<!-- Servlet API and JSTL -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -43,5 +43,16 @@
 	</dependencies>
 	<build>
 		<finalName>AngularSpringApp</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+				</configuration>
+			</plugin>
+		</plugins>
+
 	</build>
+
 </project>
