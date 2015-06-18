@@ -1,11 +1,11 @@
-package tw.com.mitac.service;
+package main.java.com.mitac.service;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.stereotype.Service;
+import main.java.com.mitac.beans.RailwayStation;
 
-import tw.com.mitac.beans.RailwayStation;
+import org.springframework.stereotype.Service;
 
 
 @Service("RailwayStationService")

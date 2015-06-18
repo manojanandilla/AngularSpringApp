@@ -1,4 +1,4 @@
-package tw.com.mitac.service;
+package main.java.com.mitac.service;
 
 import java.util.List;
 

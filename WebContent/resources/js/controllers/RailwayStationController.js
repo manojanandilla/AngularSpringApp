@@ -53,7 +53,7 @@ var RailwayStationController = function($scope, $http) {
     $scope.removeRailwayStation = function(id) {
         $scope.resetError();
 
-        $http.delete('railwaystations/remove/' + id).success(function() {
+        $http.sdelete('railwaystations/remove/' + id).success(function() {
             $scope.fetchRailwayStationsList();
         }).error(function() {
             $scope.setError('Could not remove train');

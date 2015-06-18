@@ -1,6 +1,8 @@
-package tw.com.mitac.controller;
+package main.java.com.mitac.controller;
 
 import java.util.List;
+
+import main.java.com.mitac.service.CarService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -9,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import tw.com.mitac.service.CarService;
+
 
 /**
  * Created with IntelliJ IDEA.

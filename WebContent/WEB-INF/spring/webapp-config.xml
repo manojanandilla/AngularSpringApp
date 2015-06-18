@@ -3,22 +3,18 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
-	<!-- Enables the Spring MVC @Controller programming model 
-    此參數為將 Request 會自動導向對應 Controller 的功能開啓、宣告的動作。-->
+	<!-- Enables the Spring MVC @Controller programming model -->
     <mvc:annotation-driven />
 
     <mvc:resources mapping="/resources/**" location="/resources/" />
 	<!-- Scans within the base package of the application for @Components to configure as beans -->
     <!-- @Controller, @Service, @Configuration, etc. -->
-    <context:component-scan base-package="tw.com.mitac" />
+    <context:component-scan base-package="main.java.com.mitac.*" />
 
     <bean id="velocityConfig" class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
         <property name="resourceLoaderPath" value="/WEB-INF/html/"/>
     </bean>
-<!-- Resolve logical view names to .jsp resources in the /WEB-INF/views directory 
-	ViewResolver : 這裡定義了當 Controller 執行完畢，若無特定指定呈現 View 的情況下，
-	它會直接將 View 視為 /pages/(假設prefix有設定) 路徑底下某個相對應名稱的 .jsp。 
-	例如：當 Request 為 /Login 時，若無指定呈現的 View，則會自動以 /pages/Login.jsp 來作為預設的 View。-->
+<!-- Resolve logical view names to .jsp resources in the /WEB-INF/views directory -->
     <bean id="viewResolver" class="org.springframework.web.servlet.view.velocity.VelocityViewResolver">
         <property name="cache" value="true"/>
         <property name="prefix" value=""/>

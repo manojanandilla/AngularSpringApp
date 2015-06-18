@@ -1,4 +1,4 @@
-package tw.com.mitac.controller;
+package main.java.com.mitac.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

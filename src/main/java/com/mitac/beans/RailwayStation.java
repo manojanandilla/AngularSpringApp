@@ -1,4 +1,4 @@
-package tw.com.mitac.beans;
+package main.java.com.mitac.beans;
 
 public class RailwayStation {
 

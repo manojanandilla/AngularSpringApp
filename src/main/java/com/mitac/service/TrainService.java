@@ -1,8 +1,8 @@
-package tw.com.mitac.service;
+package main.java.com.mitac.service;
 
 import java.util.List;
 
-import tw.com.mitac.beans.Train;
+import main.java.com.mitac.beans.Train;
 
 /**
  * Created with IntelliJ IDEA.

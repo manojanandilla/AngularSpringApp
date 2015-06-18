@@ -1,6 +1,9 @@
-package tw.com.mitac.controller;
+package main.java.com.mitac.controller;
 
 import java.util.List;
+
+import main.java.com.mitac.beans.Train;
+import main.java.com.mitac.service.TrainService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -10,9 +13,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import tw.com.mitac.beans.Train;
-import tw.com.mitac.service.TrainService;
 
 /**
  * Created with IntelliJ IDEA.
